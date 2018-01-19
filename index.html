@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    @keyframes shine {
+        0% {
+            background-position: 100%;
+        }
+
+         100% {
+            background-position: 0;
+        }
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto;
+        line-height: 50px;
+        font-size: 50px;
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: #19385c;
+        background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.6) 30%, #aff0ff 50%, rgba(0, 0, 0, 0.6) 70%);
+        background-blend-mode: hard-light;
+        background-size: 200%;
+        -webkit-animation: shine 4s infinite;
+    }
+</style>
+
 <body>
+
     <div>
-        我的个人主页
+        <p>
+            My name is LiuChuanyu
+        </p>
     </div>
 </body>
+
 </html>
